@@ -13,4 +13,8 @@ postsData=[
   }
 ]
 
-Template.postsList.helpers {posts:postsData}
+Template.postsList.helpers {
+    posts: ->
+        return Posts.find()
+    
+}
